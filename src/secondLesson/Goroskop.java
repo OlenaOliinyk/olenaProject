@@ -9,6 +9,7 @@ public class Goroskop {
         int collor  = year % 10;
         System.out.print(year+" year - " );
 
+
         switch (collor) {
             case 0:
                 System.out.print("White  ");
