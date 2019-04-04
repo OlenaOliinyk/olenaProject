@@ -3,35 +3,25 @@ package secondLesson;
 public class Loops {
     public static void main(String[] args) {
 
-        System.out.println("Task 1:");
-        System.out.println("print entire integer from 0 to 50000");
-        long from = 0;
-        long to = 50000;
-        System.out.println("Result:");
-        do {
-            from = from + 1;
+        long from;
+        long to;
+        String primeNumbers = "";
 
-            System.out.print(from + ",");
+        for (from = 1; from <= 50000; from++) {
+            int counter = 0;
 
-        } while (from < to);
+            for (to = from; to >= 1; to--) {
+                if (from % to == 0) {
+                    counter = counter + 1;
+                }
+            }
+            if (counter == 2) {
 
-        System.out.println();
-        System.out.println("Task 5:");
-        System.out.println("find index of elements in massive that is the same with a");
-        int[] d = {15, 207, 92, 62, 315, 92, 487, 268, 405, 241};
-        int a = 62;
-        int tempResult = 0;
-        System.out.println("Result:");
-        for (int i = 0; i < d.length; i++) {
-            if (d[i] == a) {
-                System.out.println(i + "th index");
-                tempResult = tempResult + d[i];
-
+                primeNumbers = primeNumbers + from + " ";
             }
         }
-        if (tempResult == 0) {
-            System.out.println("Massiv has not "+a);
-        }
+        System.out.println("Prime numbers from 1 to 50000 are :");
+        System.out.println(primeNumbers);
 
-        }
     }
+}
