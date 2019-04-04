@@ -2,10 +2,10 @@ package secondLesson;
 
 public class Loops {
     public static void main(String[] args) {
-
         long from;
         long to;
         String primeNumbers = "";
+
 
         for (from = 1; from <= 50000; from++) {
             int counter = 0;
