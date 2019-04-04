@@ -15,7 +15,7 @@ public class FindIndexInMassive {
                 tempResult = tempResult + d[i];
             }
         if (tempResult == 0) {
-            System.out.println("Massiv has not " + a);
+            System.out.println( a+ " is not found in Array");
         }
 
     }
@@ -26,8 +26,8 @@ public class FindIndexInMassive {
         System.out.println("Massive:");
         Arrays.stream(d).forEach(System.out::println);
 
-        System.out.print("Result: a is ");
+        System.out.print("Result: a  ");
 
-        findIndex(d, 207);
+        findIndex(d, 92);
     }
 }
