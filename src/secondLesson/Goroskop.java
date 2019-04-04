@@ -1,89 +1,104 @@
 package secondLesson;
 
+// http://xn--80aa0aqw.net/wp-content/uploads/2011/11/kitaiskui-goroskop-cveta-big.png
 public class Goroskop {
-    public static void main(String[] args) {
-        // http://xn--80aa0aqw.net/wp-content/uploads/2011/11/kitaiskui-goroskop-cveta-big.png
 
-        int year = 1976;
-        int animal = year % 12;
-        int collor  = year % 10;
-        System.out.print(year+" year - " );
+    static String chineseHoroscope = "";
 
+    public static void defineCollor(int collor) {
 
         switch (collor) {
             case 0:
-                System.out.print("White  ");
+                chineseHoroscope = "White  ";
                 break;
             case 1:
-                System.out.print("White ");
+                chineseHoroscope = "White  ";
                 break;
             case 2:
-                System.out.print("Blue ");
+                chineseHoroscope = "Blue ";
                 break;
             case 3:
-                System.out.print("Blue ");
+                chineseHoroscope = "Blue ";
                 break;
-
             case 4:
-                System.out.print("Green ");
+                chineseHoroscope = "Green ";
                 break;
             case 5:
-                System.out.print("Green ");
+                chineseHoroscope = "Green ";
                 break;
             case 6:
-                System.out.print("Red ");
+                chineseHoroscope = "Rad ";
                 break;
             case 7:
-                System.out.print("Rad ");
+                chineseHoroscope = "Rad ";
                 break;
             case 8:
-                System.out.print("Yellow ");
+                chineseHoroscope = "Yellow ";
                 break;
             case 9:
-                System.out.print("Yellow ");
+                chineseHoroscope = "Yellow ";
                 break;
 
         }
+        System.out.print(chineseHoroscope);
+    }
+
+    public static void defineAnimal(int animal) {
 
         switch (animal) {
             case 0:
-                System.out.print("Monkey ");
+                chineseHoroscope =  " Monkey ";
                 break;
             case 1:
-                System.out.print("Cock");
+                chineseHoroscope = " Cock ";
                 break;
             case 2:
-                System.out.print("Dog");
+                chineseHoroscope =  " Dog ";
                 break;
             case 3:
-                System.out.print("Pig");
+                chineseHoroscope =  " Pig ";
                 break;
             case 4:
-                System.out.print("Rat");
+                chineseHoroscope = " Rat ";
                 break;
             case 5:
-                System.out.print("Bull");
+                chineseHoroscope = " Bull ";
                 break;
             case 6:
-                System.out.print("Tiger");
+                chineseHoroscope =" Tiger ";
                 break;
             case 7:
-                System.out.print("Rabbit");
+                chineseHoroscope = " Rabbit ";
                 break;
             case 8:
-                System.out.print("Dragon");
+                chineseHoroscope = "Dragon ";
                 break;
             case 9:
-                System.out.print("Snake");
+                chineseHoroscope = " Snake ";
                 break;
             case 10:
-                System.out.println("Horse");
+                chineseHoroscope = " Horse ";
                 break;
             case 11:
-                System.out.println("Sheep");
+                chineseHoroscope = "Sheep ";
                 break;
-
-
         }
+
+        System.out.print(chineseHoroscope);
     }
+
+    public static void main(String[] args) {
+
+        int year = 1986;
+        int animal = year % 12;
+        int collor = year % 10;
+        System.out.print(year + " year ");
+        defineAnimal(animal);
+        defineCollor(collor);
+
+
+    }
+
+
 }
+
