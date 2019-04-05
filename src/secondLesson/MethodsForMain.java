@@ -1,18 +1,19 @@
 package secondLesson;
 
-public class MethodsForMain extends BubleSorting {
+import java.util.stream.IntStream;
+
+public class MethodsForMain  {
 
 
     public static void arithmetic(int[] c) {
         System.out.println("6. 1 - calculate arithmetic mean of massive");
         float sum = 0;
-         float average;
-        for (int i = 0; i < c.length; i++) {
-            sum = sum + c[i];
+        for (int i : c) {
+            sum = IntStream.of(c).sum();
         }
-        average = sum / c.length;
-        System.out.println("Result: arithmetic mean of massive = " + average);
+        System.out.println(sum / c.length);
     }
+
 
     public static void median(int[] c) {
 
@@ -62,31 +63,29 @@ public class MethodsForMain extends BubleSorting {
         int max = 0;
         int min = c[0];
         double sd = 0;
-        for(int i=0; i<c.length; i++)
-             {
-                sum = sum + c[i];
-            }
+        for (int i :c) {
+            sum +=i;
+        }
         double average = sum / c.length;
         for (int i = 0; i < c.length; i++) {
-                if (c[i] > max) {
-                    max = c[i];
-                }
+            if (c[i] > max) {
+                max = c[i];
             }
-        //System.out.println("max number is : " + max);
-
-            for (int i = 0; i < c.length; i++) {
-                if (c[i] < min) {
-                    min = c[i];
-                }
-            }
-           // System.out.println("min number is : " + min);
-            for (int i = 0; i < c.length; i++) {
-
-                sd = sd + Math.pow(c[i] - average, 2);
-            }
-            double standardDeviation = Math.sqrt(sd / (c.length - 1));
-
-            System.out.println("Result : deviation =  " + standardDeviation);
         }
+        //System.out.println("max number is : " + max);
+        for (int i = 0; i < c.length; i++) {
+            if (c[i] < min) {
+                min = c[i];
+            }
+        }
+        // System.out.println("min number is : " + min);
+        for (int i = 0; i < c.length; i++) {
+
+            sd = sd + Math.pow(c[i] - average, 2);
+        }
+        double standardDeviation = Math.sqrt(sd / (c.length - 1));
+
+        System.out.println("Result : deviation =  " + standardDeviation);
     }
+}
 
