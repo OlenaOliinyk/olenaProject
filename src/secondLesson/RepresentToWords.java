@@ -1,8 +1,8 @@
 package secondLesson;
 
-import java.text.NumberFormat;
 
 public class RepresentToWords {
+
     public static final String[] units = {"", "One", "Two", "Three", "Four",
             "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve",
             "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen",
@@ -44,8 +44,10 @@ public class RepresentToWords {
     }
 
     public static void main(final String[] args) {
-        int number = 215;
-        System.out.println(NumberFormat.getInstance().format(number) +  " = " + convert(number));
+
+
+        System.out.println(convert(1085));
+
 
     }
 }
