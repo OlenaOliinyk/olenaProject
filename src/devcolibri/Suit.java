@@ -2,17 +2,18 @@ package devcolibri;
 
 public enum Suit {
 
-        DIAMONDS("suit D"), CLUBS("suit C"), HEARTS("suit H"), SPADES("suit S");
-    String suit;
+        DIAMONDS("suitD"), CLUBS("suitC"), HEARTS("suitH"), SPADES("suitS");
+    String name;
 
     Suit(String suitName) {
-        suit = suitName;
+
+        name = suitName;
     }
 
 
     public String toString() {
 
-        return this.suit;
+        return this.name;
     }
 }
 
