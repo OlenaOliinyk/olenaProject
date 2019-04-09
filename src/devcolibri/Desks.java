@@ -1,8 +1,13 @@
 package devcolibri;
 
+import java.util.List;
+
 public class Desks {
-Cards rank = Cards.Rank;
-Cards suit = Cards.Suit;
+
+    public List<Cards> cards;
+
+
+
 
 
 }
