@@ -23,7 +23,7 @@ public class Card2 {
 
     @Override
     public String toString() {
-        return "Card name is" + rank + "name " + suit;
+        return "Rank: " + rank + "Suit:" + suit;
     }
 }
 
