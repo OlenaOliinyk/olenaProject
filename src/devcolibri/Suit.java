@@ -2,7 +2,7 @@ package devcolibri;
 
 public enum Suit {
 
-        DIAMONDS("suitD"), CLUBS("suitC"), HEARTS("suitH"), SPADES("suitS");
+        DIAMONDS("diamonds"), CLUBS("clubs"), HEARTS("hearts"), SPADES("spades");
     String name;
 
     Suit(String suitName) {
