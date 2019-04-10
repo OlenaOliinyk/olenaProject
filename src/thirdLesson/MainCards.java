@@ -1,11 +1,12 @@
 package thirdLesson;
 
 
-
-public class MainCards extends Desk {
+public class MainCards {
     public static void main(String[] args) {
 
-showDesk();
+        System.out.println("Desk of cards:");
+        Desk desk = new Desk ();
+        desk.getCards();
 
     }
 
