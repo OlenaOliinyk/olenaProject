@@ -4,12 +4,21 @@ public class Employee {
 
     String name;
     String surname;
-
+double id;
 
     public String getName() { return name; }
-    public void setName(String name) { this.name = name; }
-    public String getSurname() { return surname; }
-    public void setSurname() { this.surname = surname; }
+public double getId(){return id;}
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname() {
+        this.surname = surname;
+    }
 
 
     public Employee() {
@@ -20,8 +29,14 @@ public class Employee {
 
     }
 
-    public static void print(String name, String surname,double id) {
-        System.out.println("Employee name: "+name + " "+surname+", id: "+id);
+    public static void print(String name, String surname, double id) {
+        System.out.println("Employee name: " + name + " " + surname + ", id: " + id);
     }
 
+    public Employee(double Id) {
+        Random randomId = new Random();
+       // randomId.setRandomId();
+        System.out.println(randomId.setRandomId()+" - id from second constructor ");
+
+    }
 }
