@@ -2,8 +2,8 @@ package devcolibri;
 
 public enum Rank {
 
-    SIX("six"), SEVEN("seven"), EIGHT("eight"), NINE("nine"), TEN("ten"), VALET("valet"),
-    DAMA("dama"),KOROL("korol"),TUZ("tuz");
+    SIX("six"), SEVEN("seven"), EIGHT("eight"), NINE("nine"), TEN("ten"), JACK("jack"),
+    QUEEN("queen"), KOROL("korol"), TUZ("tuz");
 
     String name;
 
@@ -11,10 +11,9 @@ public enum Rank {
         name = rankName;
     }
 
-
-public String toString() {
+    public String toString() {
 
         return this.name;
-        }
     }
+}
 
