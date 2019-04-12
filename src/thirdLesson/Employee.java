@@ -2,12 +2,18 @@ package thirdLesson;
 
 public class Employee {
 
-    String name;
-    String surname;
-double id;
+    private String name;
+    private String surname;
+    double id;
 
-    public String getName() { return name; }
-public double getId(){return id;}
+    public String getName() {
+        return name;
+    }
+
+    public double getId() {
+        return id;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
@@ -35,8 +41,8 @@ public double getId(){return id;}
 
     public Employee(double Id) {
         Random randomId = new Random();
-       // randomId.setRandomId();
-        System.out.println(randomId.setRandomId()+" - id from second constructor ");
+        // randomId.setRandomId();
+        System.out.println(randomId.setRandomId() + " - id from second constructor ");
 
     }
 }
