@@ -1,4 +1,4 @@
-package thirdLesson;
+package deskTask;
 
 public class Card {
     private String rank;
