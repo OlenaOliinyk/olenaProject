@@ -4,7 +4,7 @@ public class Employee {
 
     private String name;
     private String surname;
-    double id;
+    private double id;
 
     public String getName() {
         return name;
