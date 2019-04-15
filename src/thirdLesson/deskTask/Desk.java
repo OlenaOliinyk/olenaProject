@@ -1,4 +1,4 @@
-package deskTask;
+package thirdLesson.deskTask;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +17,6 @@ public class Desk {
         for (String suit : suits) {
             for (String rank : ranks) {
                 allCards.add(new Card(rank, suit));
-                System.out.println(rank + " " + suit);
             }
         }
         setCards(allCards);
