@@ -8,6 +8,4 @@ public class MainCards {
         Desk desk = new Desk();
         desk.getCards().forEach(c -> System.out.println(c.toString()));
     }
-
-
 }
