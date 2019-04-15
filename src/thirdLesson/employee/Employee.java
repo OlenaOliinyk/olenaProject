@@ -2,7 +2,7 @@ package thirdLesson.employee;
 
 public class Employee {
 
-    private String name;
+    private  String name;
     private String surname;
     private double id;
 
@@ -20,31 +20,29 @@ public class Employee {
 
     public void setName(String name) {
         this.name = name;
-    }
+  }
 
-    public void setSurname() {
+    public void setSurname(String surname) {
         this.surname = surname;
     }
 
-    public void setId() {
+    public void setId(double id) {
         this.id = id;
     }
 
-    public Employee(String name, String surname, double id) {
+    public Employee(String name, String surname) {
 
         this.name = name;
         this.surname = surname;
-        setId();
+        this.id = Math.random() * 9 + 1;
     }
 
-    public static void print(String s) {
+    public void print() {
 
-        System.out.println(s);
+        System.out.println("Employee name: " + getName() + " " + getSurname() + " id: " + getId());
     }
 
     public Employee() {
         this.id = Math.random() * 9 + 1;
-
     }
-
 }
