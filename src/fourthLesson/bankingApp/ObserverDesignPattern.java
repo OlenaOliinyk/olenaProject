@@ -2,28 +2,25 @@ package fourthLesson.bankingApp;
 
 public class ObserverDesignPattern {
     public static void main(String[] args) {
-        Credit client1 = new Credit("Sara Kit");
-       // Credit client2 = new Credit("Ranbir Kapoor");
-        FeeType onePecent = new FeeType("Jay");
-        FeeType fivePercent = new FeeType("Rajan");
-      //  FeeType raj = new FeeType("Raj");
-      //  FeeType vijay =  new FeeType("Vijay");
-      //  FeeType amit = new FeeType("Amit");
-       // FeeType harsh =  new FeeType("Harsh");
-      //  client1.addMoney(5);
-        client1.withdrowMoney(onePecent);
-        client1.calculatePaymentFee();
-        //client2.addMoney(5555);
-        //client2.withdrowMoney(onePecent);
-       // client2.calculatePaymentFee();
-        //client2.showBalance(50);
-        //client1.withdrowMoney(fivePercent);
-        // client1.showBalance("T");
-        System.out.println("----------");
-        client1.showBalance(100000);
+        Credit client1 = new Credit("Sara");
+        Credit client2 = new Credit("Ranbir");
+        Bank aval = new Bank("aval");
+
+        client1.showBalance(1000);
         client1.addMoney(20);
-
-
+        client1.newBalance();
+        client1.notifyBank(aval);
+        client1.withdrowMoney(45);
+        client1.newBalance();
+        client1.notifyBank(aval);
+        client1.calculatePaymentFee(client1.findFee());
+        System.out.println("----------");
+        client2.showBalance(-200);
+        client2.addMoney(5);
+        client2.newBalance();
+        client2.withdrowMoney(25);
+        client2.notifyBank(aval);
+        client2.calculatePaymentFee(client2.findFee());
     }
 }
 
