@@ -11,7 +11,6 @@ public class Credit extends BankAccount {
     private int typeOfFee;
     private ArrayList<Observer> bankNames;
 
-    //konstructor
     public Credit(String clientName) {
         this.clientName = clientName;
         bankNames = new ArrayList<Observer>();
@@ -51,13 +50,11 @@ public class Credit extends BankAccount {
     @Override
     public void withdrowMoney(int amount) {
         getAmount();
-        if (newBalance>0){
+        if (newBalance > 0) {
             System.out.println(clientName + " wants to withdrow money " + amount);
             newBalance = newBalance - amount;
-        }
-
-else if (newBalance<=0){
-            System.out.println(clientName+"'s balance is negative. Impossible to withdrow ");
+        } else if (newBalance <= 0) {
+            System.out.println(clientName + "'s balance is negative. Impossible to withdrow ");
         }
     }
 
@@ -72,7 +69,7 @@ else if (newBalance<=0){
 
         if (newBalance < 0) {
             typeOfFee = 5;
-            System.out.println( " type of fee " + typeOfFee + "%");
+            System.out.println(" type of fee " + typeOfFee + "%");
 
 
         } else if (newBalance > 0) {
@@ -85,8 +82,8 @@ else if (newBalance<=0){
 
     @Override
     public void notifyBank(Observer o) {
-        System.out.println(o + " is notified of  " + clientName +"'s newBalance "+ newBalance);
-        for (Observer bankName : bankNames){
+        System.out.println(o + " is notified of  " + clientName + "'s newBalance " + newBalance);
+        for (Observer bankName : bankNames) {
             bankName.update(clientName);
         }
 

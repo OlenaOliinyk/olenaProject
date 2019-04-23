@@ -1,6 +1,5 @@
 package fourthLesson.bankingApp;
 
-// debit account – it is impossible to get more money than the account currently has
 
 public class Bank implements Observer {
     private String bankName;
