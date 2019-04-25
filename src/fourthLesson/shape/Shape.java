@@ -2,22 +2,11 @@ package fourthLesson.shape;
 
 public abstract class Shape {
 
-    public int rectangleArea(int length, int breadth) {
-        int result = length * breadth / 2;
-        System.out.println("Rectabgle Area = " + result);
-        return result;
-    }
+    public abstract void rectangleArea(int length, int breadth);
 
-    public int squareArea(int side) {
-        int result = side * side;
-        System.out.println("Square Area = " + result);
-        return result;
-    }
+    public abstract void squareArea(int side);
 
-    public double circleArea(int radius) {
+    public abstract void circleArea(int radius);
 
-        double result = Math.PI * radius * radius;
-        System.out.println("Circle Area = " + result);
-        return result;
-    }
+
 }

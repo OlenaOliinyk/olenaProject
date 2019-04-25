@@ -1,14 +1,21 @@
 package fourthLesson.shape;
 
-public class Area  extends Shape {
+public class Area extends Shape {
+    @Override
+    public void rectangleArea(int length, int breadth) {
+        int result = length * breadth / 2;
+        System.out.println("Rectabgle TestArea = " + result);
+    }
 
+    @Override
+    public void squareArea(int side) {
+        int result = side * side;
+        System.out.println("Square TestArea = " + result);
+    }
 
-    public static void main(String[] args) {
-        Area area = new Area();
-        area.circleArea(5);
-        area.rectangleArea(6,3);
-        area.squareArea(4);
-
-
+    @Override
+    public void circleArea(int radius) {
+        double result = Math.PI * radius * radius;
+        System.out.println("Circle TestArea = " + result);
     }
 }
