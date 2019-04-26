@@ -9,9 +9,9 @@ public class Bank implements Observer {
     }
 
     @Override
-    public void update(String clientName) {
+    public void update(String clientName, int balance) {
 
-        System.out.print(bankName +" is notified: "+ clientName + "'s updated balance = ");
+        System.out.println(bankName +" is notified: "+ clientName + "'s updated balance = "+ balance);
     }
 
     @Override

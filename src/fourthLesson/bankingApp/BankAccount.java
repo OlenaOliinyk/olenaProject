@@ -7,7 +7,6 @@ public abstract class BankAccount {
 
     public abstract void calculatePaymentFee(int fee);
 
-    public abstract void notifyBank(Observer o);
 
     public abstract void newBalance();
 

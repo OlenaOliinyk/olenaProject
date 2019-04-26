@@ -5,49 +5,33 @@ import java.util.ArrayList;
 public class Credit extends BankAccount {
 
     private String clientName;
-    private int balance;
-    private int amount;
     private int newBalance;
     private int typeOfFee;
-    private ArrayList<Observer> bankNames;
 
-    public Credit(String clientName) {
+   private ArrayList<Observer> bankNames = new ArrayList<>();
+
+    public Credit(String clientName, String bankName) {
         this.clientName = clientName;
-        bankNames = new ArrayList<Observer>();
+        bankNames.add(new Bank(bankName));
 
     }
-
-    public int getAmount() {
-        return amount;
-    }
-
-
-    public int getBalance() {
-        return balance;
-    }
-
 
     public int showBalance(int balance) {
-        getBalance();
+
         System.out.println(clientName + "'s balance = " + balance);
         newBalance = balance;
         return balance;
-
     }
-
 
     @Override
     public void addMoney(int amount) {
-        getAmount();
         System.out.println(clientName + " wants to add money: " + amount);
         newBalance = newBalance + amount;
-
-
     }
 
     @Override
     public void withdrowMoney(int amount) {
-        getAmount();
+
         if (newBalance > 0) {
             System.out.println(clientName + " wants to withdrow money " + amount);
             newBalance = newBalance - amount;
@@ -76,19 +60,10 @@ public class Credit extends BankAccount {
 
     @Override
     public void newBalance() {
-
-        System.out.println(clientName + "'s current balance " + newBalance);
-        for (Observer bankName : bankNames)
-        {
-          bankName.update(clientName);
-
+        for (Observer bankName : bankNames) {
+            bankName.update(clientName, newBalance);
         }
     }
 
-    @Override
-    public void notifyBank(Observer o) {
-        bankNames.add(o);
-        System.out.println(newBalance);
-    }
 
 }
