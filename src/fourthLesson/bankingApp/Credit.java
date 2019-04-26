@@ -35,15 +35,13 @@ public class Credit extends BankAccount {
 
     }
 
-    public void newBalance() {
-        System.out.println(clientName + "'s current balance " + newBalance);
-    }
 
     @Override
     public void addMoney(int amount) {
         getAmount();
         System.out.println(clientName + " wants to add money: " + amount);
         newBalance = newBalance + amount;
+
 
     }
 
@@ -60,7 +58,6 @@ public class Credit extends BankAccount {
 
     @Override
     public void calculatePaymentFee(int fee) {
-
         System.out.println(clientName + "'s fee amount " + newBalance * typeOfFee / 100);
 
     }
@@ -70,23 +67,28 @@ public class Credit extends BankAccount {
         if (newBalance < 0) {
             typeOfFee = 5;
             System.out.println(" type of fee " + typeOfFee + "%");
-
-
         } else if (newBalance > 0) {
             typeOfFee = 1;
             System.out.println("type of fee " + typeOfFee + "%");
         }
-
         return typeOfFee;
     }
 
     @Override
-    public void notifyBank(Observer o) {
-        System.out.println(o + " is notified of  " + clientName + "'s newBalance " + newBalance);
-        for (Observer bankName : bankNames) {
-            bankName.update(clientName);
-        }
+    public void newBalance() {
 
+        System.out.println(clientName + "'s current balance " + newBalance);
+        for (Observer bankName : bankNames)
+        {
+          bankName.update(clientName);
+
+        }
+    }
+
+    @Override
+    public void notifyBank(Observer o) {
+        bankNames.add(o);
+        System.out.println(newBalance);
     }
 
 }
