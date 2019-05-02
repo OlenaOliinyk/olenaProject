@@ -16,17 +16,18 @@ public class Credit extends BankAccount {
 
     }
 
-    public int showBalance(int balance) {
+    public void showBalance(int balance) {
 
         System.out.println(clientName + "'s balance = " + balance);
         newBalance = balance;
-        return balance;
+
     }
 
     @Override
     public void addMoney(int amount) {
         System.out.println(clientName + " wants to add money: " + amount);
         newBalance = newBalance + amount;
+        newBalance();
     }
 
     @Override
@@ -35,8 +36,10 @@ public class Credit extends BankAccount {
         if (newBalance > 0) {
             System.out.println(clientName + " wants to withdrow money " + amount);
             newBalance = newBalance - amount;
-        } else if (newBalance <= 0) {
+            newBalance();
+        } else  {
             System.out.println(clientName + "'s balance is negative. Impossible to withdrow ");
+            newBalance();
         }
     }
 
@@ -58,8 +61,8 @@ public class Credit extends BankAccount {
         return typeOfFee;
     }
 
-    @Override
-    public void newBalance() {
+
+    private void newBalance() {
         for (Observer bankName : bankNames) {
             bankName.update(clientName, newBalance);
         }
