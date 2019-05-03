@@ -2,6 +2,7 @@ package fourthLesson.bankingApp;
 
 import java.util.ArrayList;
 
+
 public class Credit extends BankAccount {
 
     private String clientName;
@@ -28,6 +29,10 @@ public class Credit extends BankAccount {
         System.out.println(clientName + " wants to add money: " + amount);
         newBalance = newBalance + amount;
         newBalance();
+        if ( amount<0){
+
+            throw new RuntimeException();
+        }
     }
 
     @Override
