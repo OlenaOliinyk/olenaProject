@@ -6,7 +6,6 @@ import java.util.Map;
 public class Main {
     public static void main(String[] args) {
 
-
         Map<Passport, Citizen> people1 = new HashMap<>();
         people1.put(new Passport("CH444444"), new Citizen("Tic", "Tok"));
         people1.put(new Passport("CH55555"), new Citizen("Lil", "Lol"));
