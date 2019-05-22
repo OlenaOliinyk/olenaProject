@@ -2,19 +2,23 @@ package sixLesson.linkedList;
 
 public class LinkedList {
     public static void main(String[] args) {
-        LinkList newList = new LinkList();
+        LinkList list = new LinkList();
+        list.addAtEnd(5);
+        list.addAtEnd(8);
+        list.addAtEnd(51);
+        list.addAtFront(9);
+        list.addAtFront(1);
+        list.printList();
 
-        newList.add(8);
-        newList.add(18);
 
-        newList.add(88);
+        list.removeByIndex(0);
+        list.printList();
+        System.out.println();
 
-        newList.insertFirst(10);
-        newList.displayList();
-        newList.delete(88);
+        Link f = list.getByIndex(1);
 
-        Link f = newList.find(10);
-        System.out.println("find by value " + f.iData);
+        System.out.println("finded value " + f.data);
+
+
     }
-
 }

@@ -1,71 +1,81 @@
 package sixLesson.linkedList;
 
 public class LinkList {
-    Link first;
-
-    public LinkList() {
-        first = null;
-    }
-
-    public void add(int iD) {
-
-        Link newNode = new Link(iD);
-        first = newNode.next;
-
-        newNode.displayLink();
-
-    }
-
-    public void insertFirst(int iD) {
-        Link newNode = new Link(iD);
-        newNode.next = first;
-        first = newNode;
-    }
+    private Link first;
 
 
-    public Link find(int key) {
-        Link current = first;
-        while (current.iData != key) {
-            if (current.next == null) {
-                return null;
-            } else {
-                current = current.next;
-            }
+    public void addAtEnd(int data) {
+        if (first == null) {
+            first = new Link(data);
+            return;
         }
-        return current;
-    }
 
-    public Link delete(int value) {
-        Link current = first;
-        Link previous = first;
-
-        while (current.next != null) {
-            if (current.next == null) {
-                return null;
-            } else {
-                previous = current;
-                current = current.next;
-            }
-
-            if (current == first) {
-                first = first.next;
-            } else {
-                previous.next = current.next;
-            }
+        Link tmp = first;
+        while (tmp.next != null) {
+            tmp = tmp.next;
         }
-        return current;
+
+        tmp.next = new Link(data);
     }
 
-    public void displayList() {
 
-        Link current = first;
+    public void addAtFront(int data) {
+        Link newRoot = new Link(data);
+        newRoot.next = first;
+        first = newRoot;
+    }
 
 
-        while (current != null) {
+    public int removeByIndex(int index) {
+        int data = 0;
+        Link tmp = first;
 
-            current.displayLink();
-            current = current.next;
+        if (index < 0)
+            return -1;
+        if (index == 0) {
+            data = first.data;
+            first = first.next;
+            return data;
         }
-        System.out.println("__");
+
+        while (index > 0) {
+            if (tmp == null) {
+                return -1;
+            }
+            tmp = tmp.next;
+            index--;
+        }
+        data = tmp.data;
+        tmp.data = tmp.next.data;
+        tmp.next = tmp.next.next;
+
+        return data;
     }
+
+    public Link getByIndex(int index) {
+        int data = 0;
+        Link tmp = first;
+
+        if (index == tmp.data) {
+            data = tmp.data;
+            System.out.println(data);
+        }
+
+        return tmp;
+    }
+
+    public void printList() {
+        if (first == null) {
+            System.out.println("List is Empty !!");
+            return;
+        }
+        Link tmp = first;
+        System.out.println();
+        while (tmp != null) {
+            System.out.print(">" + tmp.data);
+            tmp = tmp.next;
+        }
+
+    }
+
 }

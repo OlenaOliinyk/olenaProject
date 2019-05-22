@@ -1,18 +1,10 @@
 package sixLesson.linkedList;
 
- class Link {
-     public    int iData;
+class Link {
+    int data;
+    Link next;
 
-     public Link next;
-
-     public Link(int iData) {
-         this.iData = iData;
-     }
-
-     public void displayLink() {
-         System.out.println( iData );
-
-     }
+    public Link(int data) {
+        this.data = data;
+    }
 }
-
-
