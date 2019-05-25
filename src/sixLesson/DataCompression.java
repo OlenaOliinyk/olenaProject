@@ -2,7 +2,6 @@ package sixLesson;
 
 public class DataCompression {
 
-
     public static void main(String[] args) {
 
         String str1 = "AAAAaaaBBBBBB\\12";
