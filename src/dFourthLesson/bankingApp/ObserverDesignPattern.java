@@ -1,4 +1,4 @@
-package fourthLesson.bankingApp;
+package dFourthLesson.bankingApp;
 
 public class ObserverDesignPattern {
     public static void main(String[] args) {
