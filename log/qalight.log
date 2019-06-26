@@ -1,0 +1,65 @@
+2019-11-06 12:07:48   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] : Encode test :
+2019-11-06 12:07:48   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  input result: AAAAaaaBBBBBB\12
+2019-11-06 12:07:48   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  output result: 4A3a6B\\\1\2
+2019-11-06 12:07:48   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  expected output result: 4A3a6B\\\1\2
+2019-11-06 12:07:48   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] : -------------------
+2019-11-06 12:07:48   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  input result: AaaaBB2
+2019-11-06 12:07:48   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  output result: 1A3a2B\2
+2019-11-06 12:07:48   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  expected output result: 1A3a2B\2
+2019-11-06 12:07:48   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] : -------------------
+2019-11-06 12:07:48   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  input result: AaaaBB\\2
+2019-11-06 12:07:48   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  output result: 1A3a2B\\\\\2
+2019-11-06 12:07:48   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  expected output result: 1A3a2B\\\\\2
+2019-11-06 12:07:48   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] : -------------------
+2019-11-06 12:10:33   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] : Encode test :
+2019-11-06 12:10:33   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  input result: AAAAaaaBBBBBB\12
+2019-11-06 12:10:33   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  output result: 4A3a6B\\\1\2
+2019-11-06 12:10:33   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  expected output result: 4A3a6B\\\1\2
+2019-11-06 12:10:33   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] : -------------------
+2019-11-06 12:10:33   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  input result: AaaaBB2
+2019-11-06 12:10:33   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  output result: 1A3a2B\2
+2019-11-06 12:10:33   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  expected output result: 1A3a2B\2
+2019-11-06 12:10:33   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] : -------------------
+2019-11-06 12:10:33   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  input result: AaaaBB\\2
+2019-11-06 12:10:33   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  output result: 1A3a2B\\\\\2
+2019-11-06 12:10:33   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  expected output result: 1A3a2B\\\\\2
+2019-11-06 12:10:33   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] : -------------------
+2019-11-06 12:16:13   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] : Encode test :
+2019-11-06 12:16:13   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  input result: AAAAaaaBBBBBB\12
+2019-11-06 12:16:13   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  output result: 4A3a6B\\\1\2
+2019-11-06 12:16:13   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  expected output result: 4A3a6B\\\1\2
+2019-11-06 12:16:13   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] : -------------------
+2019-11-06 12:16:13   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  input result: AaaaBB2
+2019-11-06 12:16:13   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  output result: 1A3a2B\2
+2019-11-06 12:16:13   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  expected output result: 1A3a2B\2
+2019-11-06 12:16:13   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] : -------------------
+2019-11-06 12:16:13   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  input result: AaaaBB\\2
+2019-11-06 12:16:13   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  output result: 1A3a2B\\\\\2
+2019-11-06 12:16:13   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  expected output result: 1A3a2B\\\\\2
+2019-11-06 12:16:13   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] : -------------------
+2019-11-06 12:35:40   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] : Decode test: 
+2019-11-06 12:35:40   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  input result: 4A3a6B\\\1\2
+2019-11-06 12:35:40   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  output result: AAAAaaaBBBBBB\12
+2019-11-06 12:35:40   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  expected output result: AAAAaaaBBBBBB\12
+2019-11-06 12:35:40   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] : ------------------
+2019-11-06 12:35:40   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  input result: 1A3a2B\2
+2019-11-06 12:35:40   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  output result: AaaaBB2
+2019-11-06 12:35:40   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  expected output result: AaaaBB2
+2019-11-06 12:35:40   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] : ------------------
+2019-11-06 12:35:40   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  input result: 1A3a2B\\\\\2
+2019-11-06 12:35:40   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  output result: AaaaBB\\2
+2019-11-06 12:35:40   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  expected output result: AaaaBB\\2
+2019-11-06 12:35:40   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] : ------------------
+2019-11-06 12:35:40   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] : Encode test :
+2019-11-06 12:35:40   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  input result: AAAAaaaBBBBBB\12
+2019-11-06 12:35:40   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  output result: 4A3a6B\\\1\2
+2019-11-06 12:35:40   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  expected output result: 4A3a6B\\\1\2
+2019-11-06 12:35:40   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] : -------------------
+2019-11-06 12:35:40   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  input result: AaaaBB2
+2019-11-06 12:35:40   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  output result: 1A3a2B\2
+2019-11-06 12:35:40   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  expected output result: 1A3a2B\2
+2019-11-06 12:35:40   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] : -------------------
+2019-11-06 12:35:40   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  input result: AaaaBB\\2
+2019-11-06 12:35:40   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  output result: 1A3a2B\\\\\2
+2019-11-06 12:35:40   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] :  expected output result: 1A3a2B\\\\\2
+2019-11-06 12:35:40   INFO [sevenLessonJunit.jUnitDecoderEncoder.EncoderDecoderTest] : -------------------
